@@ -5,7 +5,16 @@
         body {
             font-family: Verdana, sans-serif;
         }
-    </style>  
+    </style>
+    <script>
+function myFunction() {
+  var x = document.lastModified;
+  document.getElementById("demo").innerHTML = new Date(document.lastModified).toISOString().substr(11, 8);
+}
+
+myFunction()        
+    </script>
+
 </HEAD>
 <BODY>
 <H1>Pillars of Truth</H1>
@@ -21,5 +30,7 @@
   <P><A HREF="https://odysee.com/@tonysayers:2/full-version-there-are-cities,-jobs-and:2">The Archon-controlled Physical and Astral Realms (audio)</A></P>
   <P><A HREF="https://www.amazon.co.uk/LEAVING-TRAP-Exit-Reincarnation-Cycle/dp/B0C1J56V22">Leaving the Trap</A> by Isabella Greene</P>
   <P><A HREF="https://www.trickedbythelight.com/tbtl/index.html">Tricked by the Light</A> - Wayne Bush is one of the primary authors on this topic</P>
+    <BR/>
+    <P>Last updated: <span id='demo'></span></P>
 </BODY>
 </HTML>
