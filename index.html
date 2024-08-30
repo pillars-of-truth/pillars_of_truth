@@ -7,16 +7,16 @@
         }
     </style>
     <script>
-function myFunction() {
+function onloadFunction() {
   var x = document.lastModified;
-  document.getElementById("demo").innerHTML = new Date(document.lastModified).toISOString().substr(11, 8);
+  document.getElementById("lastUpdated").innerHTML = new Date(document.lastModified).toISOString().substr(11, 8);
 }
 
 myFunction()        
     </script>
 
 </HEAD>
-<BODY>
+<BODY onload="onloadFunction()">
 <H1>Pillars of Truth</H1>
   <H2>Germanische Heilkunde</H2>
     <P>The discoveries of Dr Hamer turn our established view on medicine and illness on their head, allowing us to understand the cause and effect of all so-called diseases.
@@ -33,6 +33,6 @@ myFunction()
   <P><A HREF="https://www.trickedbythelight.com/tbtl/index.html">Tricked by the Light</A> - Wayne Bush is one of the primary authors on this topic</P>
     <P>&nbsp;</P>
     <P>&nbsp;</P>
-    <P>Last updated: <span id='demo'></span></P>
+    <P>Last updated: <span id='lastUpdated'></span></P>
 </BODY>
 </HTML>
